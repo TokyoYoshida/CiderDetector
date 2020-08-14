@@ -65,7 +65,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             material.lightingModel = .physicallyBased }
             // 直方体ジオメトリを持つノードを作成
             let boxNode = SCNNode(geometry: geometry)
-            boxNode.position = SCNVector3(objectAnchor.referenceObject.center) DispatchQueue.main.async(execute: {
+            boxNode.position = SCNVector3(objectAnchor.referenceObject.center)
+            DispatchQueue.main.async(execute: {
             node.addChildNode(boxNode)
                 
             })
