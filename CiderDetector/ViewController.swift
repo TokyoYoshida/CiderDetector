@@ -53,13 +53,22 @@ class ViewController: UIViewController, ARSCNViewDelegate {
    //ARアンカー追加時に呼ばれる
    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
        DispatchQueue.main.async {
+        guard let objectAnchor = anchor as? ARObjectAnchor else { return }
            //ARAnchorの名前がgebaraの時
            if (anchor.name == "cyder") {
-               //モデルノードの追加
-               let scene = SCNScene(named: "art.scnassets/ship.scn")
-               let modelNode = (scene?.rootNode.childNode(withName: "ship", recursively: false))!
-               modelNode.scale = SCNVector3(x: 0.01, y: 0.01, z: 0.01)
-               node.addChildNode(modelNode)
+            // 直方体ジオメトリを作成
+            let extent = objectAnchor.referenceObject.extent
+            let geometry = SCNBox(width: CGFloat(extent.x), height: CGFloat(extent.y),
+            length: CGFloat(extent.z), chamferRadius: 0.01)
+            if let material = geometry.firstMaterial {
+//            material.diffuse.contents = color
+            material.lightingModel = .physicallyBased }
+            // 直方体ジオメトリを持つノードを作成
+            let boxNode = SCNNode(geometry: geometry)
+            boxNode.position = SCNVector3(objectAnchor.referenceObject.center) DispatchQueue.main.async(execute: {
+            node.addChildNode(boxNode)
+                
+            })
            }
        }
    }
