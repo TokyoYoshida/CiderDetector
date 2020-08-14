@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E66C7CC24E6794A00A91042 /* SceneKit Asset Catalog.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E66C7CB24E6794A00A91042 /* SceneKit Asset Catalog.scnassets */; };
+		1E66C7CC24E6794A00A91042 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E66C7CB24E6794A00A91042 /* art.scnassets */; };
 		1EC1B96B24C3951400093A52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1B96A24C3951400093A52 /* AppDelegate.swift */; };
 		1EC1B96D24C3951400093A52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1B96C24C3951400093A52 /* ViewController.swift */; };
 		1EC1B96F24C3951400093A52 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1B96E24C3951400093A52 /* Experience.rcproject */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E66C7CB24E6794A00A91042 /* SceneKit Asset Catalog.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = "SceneKit Asset Catalog.scnassets"; sourceTree = "<group>"; };
+		1E66C7CB24E6794A00A91042 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		1EC1B96724C3951400093A52 /* CiderDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiderDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC1B96A24C3951400093A52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EC1B96C24C3951400093A52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 				1EC1B97324C3951700093A52 /* Assets.xcassets */,
 				1EC1B97524C3951700093A52 /* LaunchScreen.storyboard */,
 				1EC1B97824C3951700093A52 /* Info.plist */,
-				1E66C7CB24E6794A00A91042 /* SceneKit Asset Catalog.scnassets */,
+				1E66C7CB24E6794A00A91042 /* art.scnassets */,
 			);
 			path = CiderDetector;
 			sourceTree = "<group>";
@@ -235,7 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E66C7CC24E6794A00A91042 /* SceneKit Asset Catalog.scnassets in Resources */,
+				1E66C7CC24E6794A00A91042 /* art.scnassets in Resources */,
 				1EC1B97724C3951700093A52 /* LaunchScreen.storyboard in Resources */,
 				1EC1B97424C3951700093A52 /* Assets.xcassets in Resources */,
 				1EC1B97224C3951400093A52 /* Main.storyboard in Resources */,
