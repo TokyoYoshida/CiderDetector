@@ -61,7 +61,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             let geometry = SCNBox(width: CGFloat(extent.x), height: CGFloat(extent.y),
             length: CGFloat(extent.z), chamferRadius: 0.01)
             if let material = geometry.firstMaterial {
-//            material.diffuse.contents = color
+            material.diffuse.contents = #imageLiteral(resourceName: "bubble")
             material.lightingModel = .physicallyBased }
             // 直方体ジオメトリを持つノードを作成
             let boxNode = SCNNode(geometry: geometry)
