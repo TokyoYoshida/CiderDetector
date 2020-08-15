@@ -44,20 +44,19 @@ func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: AR
        DispatchQueue.main.async {
         guard let objectAnchor = anchor as? ARObjectAnchor else { return }
            if (anchor.name == "cyder") {
+                let extent = objectAnchor.referenceObject.extent
+                let geometry = SCNBox(width: CGFloat(extent.x), height: CGFloat(extent.y), length: CGFloat(extent.z), chamferRadius: 0.00)
+                if let material = geometry.firstMaterial {
+                    material.diffuse.contents = UIColor.init(red: 175/255, green: 255/255, blue: 255/255, alpha: 200/255)
+                    material.lightingModel = .lambert
+                    
+                }
 
-            let extent = objectAnchor.referenceObject.extent
-            let geometry = SCNBox(width: CGFloat(extent.x), height: CGFloat(extent.y),
-            length: CGFloat(extent.z), chamferRadius: 0.01)
-            if let material = geometry.firstMaterial {
-                material.diffuse.contents = UIColor.blue
-            material.lightingModel = .physicallyBased }
-
-            let boxNode = SCNNode(geometry: geometry)
-            boxNode.position = SCNVector3(objectAnchor.referenceObject.center)
-            DispatchQueue.main.async(execute: {
-            node.addChildNode(boxNode)
-                
-            })
+                let boxNode = SCNNode(geometry: geometry)
+                boxNode.position = SCNVector3(objectAnchor.referenceObject.center)
+                DispatchQueue.main.async(execute: {
+                    node.addChildNode(boxNode)
+                })
            }
        }
    }
