@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,7 +10,7 @@
         <scene sceneID="ICk-8o-PCC">
             <objects>
                 <viewController id="gG6-3m-Siz" customClass="ViewController" customModule="CiderDetector" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Nua-Pu-FKQ">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nua-Pu-FKQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -23,10 +22,9 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="QEF-wI-s5h" secondAttribute="bottom" id="eJt-of-DmM"/>
                             <constraint firstItem="QEF-wI-s5h" firstAttribute="top" secondItem="Nua-Pu-FKQ" secondAttribute="top" id="l32-2P-xZQ"/>
-                            <constraint firstItem="QEF-wI-s5h" firstAttribute="trailing" secondItem="IgS-sH-qO9" secondAttribute="trailing" id="uJ8-gl-CIz"/>
-                            <constraint firstItem="QEF-wI-s5h" firstAttribute="leading" secondItem="IgS-sH-qO9" secondAttribute="leading" id="wcX-dU-dtk"/>
+                            <constraint firstItem="QEF-wI-s5h" firstAttribute="trailing" secondItem="Nua-Pu-FKQ" secondAttribute="trailing" id="uJ8-gl-CIz"/>
+                            <constraint firstItem="QEF-wI-s5h" firstAttribute="leading" secondItem="Nua-Pu-FKQ" secondAttribute="leading" id="wcX-dU-dtk"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="IgS-sH-qO9"/>
                     </view>
                     <connections>
                         <outlet property="sceneView" destination="QEF-wI-s5h" id="jwP-kV-Wy6"/>
