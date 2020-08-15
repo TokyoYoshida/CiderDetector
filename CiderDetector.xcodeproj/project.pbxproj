@@ -37,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		1E66C7CB24E6794A00A91042 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		1EC1B96724C3951400093A52 /* CiderDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiderDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EC1B96724C3951400093A52 /* サイダー検出装置.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "サイダー検出装置.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC1B96A24C3951400093A52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EC1B96C24C3951400093A52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1EC1B96E24C3951400093A52 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		1EC1B96824C3951400093A52 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1EC1B96724C3951400093A52 /* CiderDetector.app */,
+				1EC1B96724C3951400093A52 /* サイダー検出装置.app */,
 				1EC1B97D24C3951700093A52 /* CiderDetectorTests.xctest */,
 				1EC1B98824C3951800093A52 /* CiderDetectorUITests.xctest */,
 			);
@@ -148,7 +148,7 @@
 			);
 			name = CiderDetector;
 			productName = CiderDetector;
-			productReference = 1EC1B96724C3951400093A52 /* CiderDetector.app */;
+			productReference = 1EC1B96724C3951400093A52 /* サイダー検出装置.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1EC1B97C24C3951700093A52 /* CiderDetectorTests */ = {
@@ -446,8 +446,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.CiderDetector;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.yoshidaforpublic.CyderDetector;
+				PRODUCT_NAME = "サイダー検出装置";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -465,8 +465,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.CiderDetector;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.yoshidaforpublic.CyderDetector;
+				PRODUCT_NAME = "サイダー検出装置";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
